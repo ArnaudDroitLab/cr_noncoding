@@ -18,7 +18,7 @@ do
 module load mugqic/python/2.7.8
 cd `pwd`
 module load mugqic/ea-utils/1.1.2-537
-fastq-multx input/$i.sample.index $outputdir/cut2/$i.R1.fastq.gz $outputdir/cut2/$i.R2.fastq.gz -o $outputdir/demultiplexed/%.R1.fastq $outputdir/demultiplexed/%.R2.fastq
+fastq-multx input/$i.sample.index $outputdir/cut2/$i.R1.fastq.gz $outputdir/cut2/$i.R2.fastq.gz -o $outputdir/demultiplexed/%.R1.fastq.gz $outputdir/demultiplexed/%.R2.fastq.gz
 EOF
     workdir=`pwd`
     previousjob=`echo jobs/$i.cut1.sh.jobid`
