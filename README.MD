@@ -2,7 +2,7 @@
 
 This is the code for the analysis of Claude Robert's RNA-Seq libraries of ten different embryonic bovine tissues.
 
-## Libraries
+## Libraries (Bovine)
 
 The libraries were generated using a mix of random and dT oligos, which should provide a fair coverage of the full length of transcripts, rather than just their 3' ends. Genes lacking a poly-A tail should also be represented. All libraries were ribo-depleted, and ERCC spike-ins were added in the extraction buffer, insuring that they would go through all subsequent processing steps. The libraries were subjected to a linear amplification, then were barcoded and pooled into 5 sequencing lanes.
 
@@ -39,7 +39,7 @@ The libraries were generated using a mix of random and dT oligos, which should p
 | 5       | Expanded-blastocyst | b   | L2-BC5   | AGGG    |
 | 5       | Expanded-blastocyst | c   | L2-BC6   | CCAT    |
 
-## Processing
+## Processing (Bovine)
 
 In orders, the following steps must be carried out:
 
@@ -61,3 +61,85 @@ AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT
 8. The raw quantifications must be normalized using the ERCC abundances.
 9. The transcripts must be annotated. (TODO)
 
+## Libraries (Mouse)
+
+| File                               | Tissue       |Rep| Tag  |
+|------------------------------------|--------------|---|------|
+| 1_cell-A_ACCC_L002.R1.fastq.gz     | 1c           | A | ACCC |
+| 1_cell-A_ACCC_L002.R2.fastq.gz     | 1c           | A | ACCC |
+| 1_cell-A_ACCC_L003.R1.fastq.gz     | 1c           | A | ACCC |
+| 1_cell-A_ACCC_L003.R2.fastq.gz     | 1c           | A | ACCC |
+| 1_cell-B_CGTA_L002.R1.fastq.gz     | 1c           | B | CGTA |
+| 1_cell-B_CGTA_L002.R2.fastq.gz     | 1c           | B | CGTA |
+| 1_cell-B_CGTA_L003.R1.fastq.gz     | 1c           | B | CGTA |
+| 1_cell-B_CGTA_L003.R2.fastq.gz     | 1c           | B | CGTA |
+| 1_cell-C_GAGT_L002.R1.fastq.gz     | 1c           | C | GAGT |
+| 1_cell-C_GAGT_L002.R2.fastq.gz     | 1c           | C | GAGT |
+| 1_cell-C_GAGT_L003.R1.fastq.gz     | 1c           | C | GAGT |
+| 1_cell-C_GAGT_L003.R2.fastq.gz     | 1c           | C | GAGT |
+| 2_cells-A_TTAG_L004.R1.fastq.gz    | 2c           | A | TTAG |
+| 2_cells-A_TTAG_L004.R2.fastq.gz    | 2c           | A | TTAG |
+| 2_cells-A_TTAG_L005.R1.fastq.gz    | 2c           | A | TTAG |
+| 2_cells-A_TTAG_L005.R2.fastq.gz    | 2c           | A | TTAG |
+| 2_cells-B_AGGG_L004.R1.fastq.gz    | 2c           | B | AGGG |
+| 2_cells-B_AGGG_L004.R2.fastq.gz    | 2c           | B | AGGG |
+| 2_cells-B_AGGG_L005.R1.fastq.gz    | 2c           | B | AGGG |
+| 2_cells-B_AGGG_L005.R2.fastq.gz    | 2c           | B | AGGG |
+| 2_cells-C_CCAT_L004.R1.fastq.gz    | 2c           | C | CCAT |
+| 2_cells-C_CCAT_L004.R2.fastq.gz    | 2c           | C | CCAT |
+| 2_cells-C_CCAT_L005.R1.fastq.gz    | 2c           | C | CCAT |
+| 2_cells-C_CCAT_L005.R2.fastq.gz    | 2c           | C | CCAT |
+| 4_cells_GAGT_L006.R1.fastq.gz      | 4c           | A | GAGT |
+| 4_cells_GAGT_L006.R2.fastq.gz      | 4c           | A | GAGT |
+| 4_cells_GAGT_L007.R1.fastq.gz      | 4c           | A | GAGT |
+| 4_cells_GAGT_L007.R2.fastq.gz      | 4c           | A | GAGT |
+| 4_cells_GAGT_L008.R1.fastq.gz      | 4c           | A | GAGT |
+| 4_cells_GAGT_L008.R2.fastq.gz      | 4c           | A | GAGT |
+| 8_cells-A_TTAG_L002.R1.fastq.gz    | 8c           | A | TTAG |
+| 8_cells-A_TTAG_L002.R2.fastq.gz    | 8c           | A | TTAG |
+| 8_cells-A_TTAG_L003.R1.fastq.gz    | 8c           | A | TTAG |
+| 8_cells-A_TTAG_L003.R2.fastq.gz    | 8c           | A | TTAG |
+| 8_cells-B_AGGG_L002.R1.fastq.gz    | 8c           | B | AGGG |
+| 8_cells-B_AGGG_L002.R2.fastq.gz    | 8c           | B | AGGG |
+| 8_cells-B_AGGG_L003.R1.fastq.gz    | 8c           | B | AGGG |
+| 8_cells-B_AGGG_L003.R2.fastq.gz    | 8c           | B | AGGG |
+| Blast_GTCA_L006.R1.fastq.gz        | Blast        | A | GTCA |
+| Blast_GTCA_L006.R2.fastq.gz        | Blast        | A | GTCA |
+| Blast_GTCA_L007.R1.fastq.gz        | Blast        | A | GTCA |
+| Blast_GTCA_L007.R2.fastq.gz        | Blast        | A | GTCA |
+| Blast_GTCA_L008.R1.fastq.gz        | Blast        | A | GTCA |
+| Blast_GTCA_L008.R2.fastq.gz        | Blast        | A | GTCA |
+| Early_blast_CCAT_L006.R1.fastq.gz  | Early_blast  | A | CCAT |
+| Early_blast_CCAT_L006.R2.fastq.gz  | Early_blast  | A | CCAT |
+| Early_blast_CCAT_L007.R1.fastq.gz  | Early_blast  | A | CCAT |
+| Early_blast_CCAT_L007.R2.fastq.gz  | Early_blast  | A | CCAT |
+| Early_blast_CCAT_L008.R1.fastq.gz  | Early_blast  | A | CCAT |
+| Early_blast_CCAT_L008.R2.fastq.gz  | Early_blast  | A | CCAT |
+| Expand_blast_TATC_L006.R1.fastq.gz | Expand_blast | A | TATC |
+| Expand_blast_TATC_L006.R2.fastq.gz | Expand_blast | A | TATC |
+| Expand_blast_TATC_L007.R1.fastq.gz | Expand_blast | A | TATC |
+| Expand_blast_TATC_L007.R2.fastq.gz | Expand_blast | A | TATC |
+| Expand_blast_TATC_L008.R1.fastq.gz | Expand_blast | A | TATC |
+| Expand_blast_TATC_L008.R2.fastq.gz | Expand_blast | A | TATC |
+| GV_CGTA_L006.R1.fastq.gz           | GV           | A | CGTA |
+| GV_CGTA_L006.R2.fastq.gz           | GV           | A | CGTA |
+| GV_CGTA_L007.R1.fastq.gz           | GV           | A | CGTA |
+| GV_CGTA_L007.R2.fastq.gz           | GV           | A | CGTA |
+| GV_CGTA_L008.R1.fastq.gz           | GV           | A | CGTA |
+| GV_CGTA_L008.R2.fastq.gz           | GV           | A | CGTA |
+| Morula-A_GTCA_L004.R1.fastq.gz     | Morula       | A | GTCA |
+| Morula-A_GTCA_L004.R2.fastq.gz     | Morula       | A | GTCA |
+| Morula-A_GTCA_L005.R1.fastq.gz     | Morula       | A | GTCA |
+| Morula-A_GTCA_L005.R2.fastq.gz     | Morula       | A | GTCA |
+| Morula-B_TATC_L004.R1.fastq.gz     | Morula       | B | TATC |
+| Morula-B_TATC_L004.R2.fastq.gz     | Morula       | B | TATC |
+| Morula-B_TATC_L005.R1.fastq.gz     | Morula       | B | TATC |
+| Morula-B_TATC_L005.R2.fastq.gz     | Morula       | B | TATC |
+| UF_ACCC_L006.R1.fastq.gz           | UF           | A | ACCC |
+| UF_ACCC_L006.R2.fastq.gz           | UF           | A | ACCC |
+| UF_ACCC_L007.R1.fastq.gz           | UF           | A | ACCC |
+| UF_ACCC_L007.R2.fastq.gz           | UF           | A | ACCC |
+| UF_ACCC_L008.R1.fastq.gz           | UF           | A | ACCC |
+| UF_ACCC_L008.R2.fastq.gz           | UF           | A | ACCC |
+
+## Processing (Mouse)
